@@ -1,0 +1,212 @@
+*{
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'Robot', sans-serif;
+    margin: 0;
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+h1{font-size: 3.5em;}
+h2{font-size: 2.7em;}
+h3{font-size: 2em;}
+p{font-size: 1.25em;}
+ul{list-style: none;}
+li{font-size: 1.25em;}
+
+
+button{
+    font-size: 1.5e;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    color: white;
+    background-color: rgb(57, 14, 232);
+}
+
+button:hover{
+    background-color: rgb(37, 5, 163); ;
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+header{
+    background-color: rgb(245, 245 , 245);
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: rgb(57, 14, 232);;
+    font-size: 1.5em;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    color: rgb(57, 14, 232);
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    color: white;
+    height: 70vh;
+    background-image: linear-gradient(
+        0deg,
+        rgb(0,0,0,0.5),
+        rgb(0,0,0,0.5)
+    )
+    ,url("img/hero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+/* retos */
+
+#reto{
+    background-color: rgba(30, 30, 30);
+    color: white;
+    text-align: center;
+}
+
+#reto .retos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#reto .container{
+    padding: 150px 12px;
+    text-align: center;
+}
+
+#reto h2{
+    margin-top: 0;
+}
+
+#reto p{
+    display: none;
+}
+
+#reto .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 100px;
+    margin: 30px;
+    border-radius: 10px;
+}
+
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgb(0,0,0,0.5),
+        rgb(0,0,0,0.5)
+    )
+    ,url("img/gato-programador1.jpeg");
+}
+
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgb(0,0,0,0.5),
+        rgb(0,0,0,0.5)
+    )
+    ,url("img/gato-programador2");
+}
+
+
+/* profile */
+
+#profile .container{
+    text-align: center;
+    padding: 20px 12px;
+}
+
+#profile h4{
+    font-size: 1.5em ;
+}
+
+#profile li{
+    margin: 12px 0px;
+    font-weight: bold;
+}
+
+#profile img{
+    border-radius: 10px;
+}
+
+.superior{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: 10px;
+    padding: 15px;
+}
+
+.superior p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 30px;
+}
+
+.medio{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(212, 209, 209);;
+}
+
+footer{
+    background-color: rgb(230, 230, 230);
+}
+
+footer p{
+    margin: 0;
+    padding: 12px;
+    color: rgb(100, 100, 100);
+}
+
+footer .container{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
