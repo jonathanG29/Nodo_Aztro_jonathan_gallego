@@ -17,8 +17,8 @@
             <input type="text" name="fname" id="fname" required>
             <label for="lasname">Primer apellido</label>
             <input type="text" name="lasname" id="lasname" required>
-            <label for="lasname">Segundo apellido</label>
-            <input type="text" name="lasname" id="lasname" required><br><br>
+            <label for="ultimname">Segundo apellido</label>
+            <input type="text" name="ultimname" id="ultimname" required><br><br>
             <label for="mail">Correo Electronico</label>
             <input type="email" name="email" id="email" required>
             <label for="departments">Departamento</label>
@@ -41,11 +41,15 @@
             <select name="carrer" id="carrer">
                 <optgroup label="carrer" id="carrer"></optgroup>
             </select>
-            <label for="modalidad">modalidad:</label>
-            <input type="radio">
-            <label for="virtual">virtual</label>
-            <input type="radio">
-            <label for="virtual">prensencial</label><br><br>
+
+            <label>Modalidad:</label>
+            <input type="radio" id="option1" name="modalidad" value="1">
+            <label for="option1">Virtual</label>
+            <input type="radio" id="option2" name="modalidad" value="2">
+            <label for="option2">Presencial</label>
+            <br><br>
+
+
             <label for="jobs">Estas trabajando actualmente?</label>
             <select name="select" id="">
             <option value="yes">si</option>
