@@ -8,52 +8,49 @@
 </head>
 <body>
     <div class="nav">
-        <h1>retos logicos JavaScript</h1>
+        <h1>Retos Lógicos JavaScript</h1>
         <ul class="nav-list">
-            <li>rectangulo</li>
-            <li>circulo</li>
+            <li id="show-rectangulo">Rectángulo</li>
+            <li id="show-circulo">Círculo</li>
         </ul>
-
     </div>
-    
-
     <div class="container">
-        
-        <div class="container-rectangulo">
+        <div class="container-rectangulo" id="rectangulo">
             <img src="./img/rectangulo.png" alt="rectangulo" width="140px" height="150">
-            <h3>Calculadora rectangulo</h3>
-            <label for="bas">Base en centimetros</label>
-            <input type="number" name="base" id="bas" placeholder="ingresa un valor">
+            <h3>Calculadora Rectángulo</h3>
+            <label for="base">Base en centímetros</label>
+            <input type="number" name="base" id="base" placeholder="Ingresa un valor">
             <br>
-            <label for="altura">Altura en centimetros</label>
-            <input type="number" name="altura" id="alt" placeholder="ingresa un valor">
+            <label for="altura">Altura en centímetros</label>
+            <input type="number" name="altura" id="altura" placeholder="Ingresa un valor">
             <br>
             <button type="submit" id="btncalcular">Calcular</button>
             <br>
-            <!-- <button type="button">Reiniciar</button> -->
-
-            <h4>resultados</h4>
-            <p>Area(cm2): <span id="areres"></span></p>
-            <p>Perimetro(cm2): <span id="perires"></span></p>
-            <p>Diagonal(cm2): <span id="diares"></span></p>
-
+            <h4>Resultados</h4>
+            <label for="areres">Área (m2)</label>
+            <input type="number" name="Area" id="areres" readonly placeholder="Llenar los valores alt y base">
+            <label for="perimetro">Perímetro (m2)</label>
+            <input type="number" name="perimetro" id="perimetro" readonly placeholder="Llenar los valores alt y base">
+            <label for="diares">Diámetro</label>
+            <input type="number" name="diametro" id="diares" readonly placeholder="Llenar los valores alt y base">
         </div>
-        
-        <div class="container-circulo">
-            <img src="./img/diametro.jpeg" alt="Circulo" width="140px" height="150">
-            <h3>Calculadora circulo</h3>
-            <label for="diametro">Ingresar el diametro</label>
-            <input type="number" name="diametro" id="diametro" placeholder="ingresa un valor">
+        <div class="container-circulo" id="circulo">
+            <img src="./img/diametro.jpeg" alt="Círculo" width="140px" height="150">
+            <h3>Calculadora Círculo</h3>
+            <label for="diametro">Ingresar el diámetro</label>
+            <input type="number" name="diametro" id="diametro" placeholder="Ingresa un valor">
             <br>
             <button type="submit" id="btncalcular2">Calcular</button>
-            <h4>resultados</h4>
-            <p>Area(cm2): <span id="areares"></span></p>
-            <p>perimetro(cm2): <span id="perimres"></span></p>
-            <p>radio(cm2): <span id="radiores"></span></p>
+            <h4>Resultados</h4>
+            <label for="areaCirculo">Área (m2)</label>
+            <input type="number" name="AreaCirculo" id="areaCirculo" readonly placeholder="Llenar los valores">
+            <label for="perimCirculo">Perímetro (cm2)</label>
+            <input type="number" name="perimCirculo" id="perimCirculo" readonly placeholder="Llenar los valores">
+            <label for="Radio">Radio</label>
+            <input type="number" name="perimCirculo" id="Radio" readonly placeholder="Llenar los valores">
             <br>
         </div>
     </div>
-
-    <script src="./script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
