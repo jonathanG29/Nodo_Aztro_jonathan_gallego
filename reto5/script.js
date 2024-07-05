@@ -1,42 +1,62 @@
-const btncalcular = document.getElementById('btncalcular')
+document.addEventListener('DOMContentLoaded', () => {
+    const showRectangulo = document.getElementById('show-rectangulo');
+    const showCirculo = document.getElementById('show-circulo');
+    const rectanguloContainer = document.getElementById('rectangulo');
+    const circuloContainer = document.getElementById('circulo');
 
-// rectangulo 
-btncalcular.addEventListener('click', ()=>{
+    showRectangulo.addEventListener('click', () => {
+        rectanguloContainer.classList.add('active');
+        circuloContainer.classList.remove('active');
+    });
+
+    showCirculo.addEventListener('click', () => {
+        circuloContainer.classList.add('active');
+        rectanguloContainer.classList.remove('active');
+    });
+});
+
+
+// Rectángulo
+const btncalcular = document.getElementById('btncalcular');
+const inputBase = document.getElementById('base');
+const inputAltura = document.getElementById('altura');
+
+const inputArea = document.getElementById('areres');
+const inputPerimetro = document.getElementById('perimetro');
+const inputDiametro = document.getElementById('diares');
+
+btncalcular.addEventListener('click', () => {
+    let base = parseFloat(inputBase.value);
+    let altura = parseFloat(inputAltura.value);
     
-    let alt = parseInt(document.getElementById("alt").value);
-    let base = parseInt(document.getElementById("bas").value);
-    
-    area = base * alt;
-    perimetro = 2 * base + 2 * alt;
-    diagonal = Math.sqrt(base * base + alt * alt);
-    
-    document.getElementById("areres").innerHTML = area
-    document.getElementById("perires").innerHTML = perimetro
-    document.getElementById("diares").innerHTML = diagonal
-})
+    let area = base * altura;
+    inputArea.value = `${area.toFixed(2)}`;
 
-// circulo
+    let perimetro = 2 * base + 2 * altura;
+    inputPerimetro.value = `${perimetro.toFixed(2)}`;
 
-const btncalcular2 = document.getElementById('btncalcular2')
+    let diagonal = Math.sqrt(base * base + altura * altura);
+    inputDiametro.value = `${diagonal.toFixed(2)}`;
+});
 
+// Círculo
+const btncalcular2 = document.getElementById('btncalcular2');
+const inputDiametroCirculo = document.getElementById('diametro');
 
-btncalcular2 = addEventListener('click', ()=>{
+const inputAreaCirculo = document.getElementById('areaCirculo');
+const inputPerimetroCirculo = document.getElementById('perimCirculo');
+const inputRadio = document.getElementById('Radio');
 
-let diametro = parseInt(document.getElementById("diametro").value)
+btncalcular2.addEventListener('click', () => {
+    let diametro = parseFloat(inputDiametroCirculo.value);
+    const Pi = 3.14;
 
+    let radio = diametro / 2;
+    inputRadio.value = `${radio.toFixed(2)}`;
 
-const Pi = 3.14159;
+    let areaCirculo = Pi * radio * radio;
+    inputAreaCirculo.value = `${areaCirculo.toFixed(2)}`;
 
-radio = diametro / 2
-areaCirculo = Pi * radio*radio
-perimetro = 2*Pi*radio
-
-document.getElementById("areares").innerHTML = areaCirculo
-document.getElementById("perimres").innerHTML = perimetro
-document.getElementById("radiores").innerHTML = radio
-
-
-})
-
-
-
+    let perimetro = 2 * Pi * radio;
+    inputPerimetroCirculo.value = `${perimetro.toFixed(2)}`;
+});

@@ -1,17 +1,17 @@
-*{
+* {
     box-sizing: border-box;
 }
 
-body{
-    font-family: 'Robot', sans-serif;
+body {
+    font-family: 'Roboto', sans-serif;
     margin: 0;
 }
 
-h1{
+h1 {
     color: white;
 }
 
-.nav{
+.nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -21,7 +21,7 @@ h1{
     background-color: rgba(61, 137, 224, 0.836);
 }
 
-.nav-list{
+.nav-list {
     display: flex;
     flex-direction: row;
     list-style: none;
@@ -31,7 +31,11 @@ h1{
     cursor: pointer;
 }
 
-.container{
+.nav-list li:hover {
+    color: aquamarine;
+}
+
+.container {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -39,16 +43,40 @@ h1{
     background-color: rgba(61, 198, 150, 0.308);
 }
 
-.container-rectangulo{
+.container .container-rectangulo, .container
+.container-circulo {
+    display: none;
+}
+
+.container .container-rectangulo.active,
+.container .container-circulo.active {
+    display: block;
+}
+
+
+.container-rectangulo, 
+.container-circulo {
     margin: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
+    border: solid 1px;
+    background-color: rgb(66, 173, 137);
+    padding: 10px;
+    border-radius: 5px;
 }
 
-.container-circulo{
-    margin: 20px;
+.container-rectangulo label,
+.container-circulo label {
+    font-family: Roboto, sans-serif;
+    margin-top: 5px;
     display: flex;
-    flex-direction:column;
-    align-items: center;
+}
+
+.container-rectangulo input,
+.container-circulo input {
+    border-radius: 10px;
+    padding: 3.5px;
+    display: flex;
 }
