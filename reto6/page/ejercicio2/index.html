@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+<nav class="nav_titulo">
+    <h2>Calculadora de pesticida</h2>
+    <p>calculadora para encontrar la cantidad de pesticidad para un terreno
+        trapezoidal
+    </p>
+</nav>
+<main class="mainContainer">
+    <section>
+        <form class="form" id="data-form">
+            <div class="data-form-input">
+                <label for="base">Base Mayor</label>
+                <input type="number" step="0.1" min="1" max="9999" id="baseMayor" required>
+            </div>
+            <div class="data-form-input">
+                <label for="baseMenor">Base Menor</label>
+                <input type="number" step="0.1" min="1" max="9999" id="baseMenor" required>
+            </div>
+            <div class="data-form-input">
+                <label for="Altura">Altura</label>
+                <input type="number" step="0.1" min="1" max="9999" id="Altura" required>
+            </div>
+
+            <button type="submit">Calcular</button>
+        </form>
+
+        <div class="resultado">
+            <div class="resultado_input">
+                <label for="resultado_area">Area total</label>
+                <input type="text" name="resultadoArea" id="resultadoArea" readonly>
+            </div>
+
+            <div class="resultado_input">
+                <label for="resultadoPerimetro">Perimetro total</label>
+                <input type="text" name="resultadoPerimetro" id="resultadoPerimetro" readonly>
+            </div>
+            <div class="resultado_input">
+                <label for="resultadoPesticida">Pesticida total</label>
+                <input type="text" name="resultadoPesticida" id="resultadoPesticida" readonly>
+            </div>
+        </div>
+    </section>
+</main>
+    <script src="./logica2.js"></script>
+</body>
+</html>
