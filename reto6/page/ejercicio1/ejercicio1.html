@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio1</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="titulo">
+        <h1>Ejercio 1</h1>
+        <span>Un nadador necesita conocer el promedio final de tiempo que gasta en recorrer una piscina de 100 metros,
+            sabiendo que en el día el realiza cinco pruebas medidas en segundos.</span>
+    </div>
+        <section>
+        <br>
+        <div class="container">
+            <div class="container-form">
+                <label for="tiempo1">Ingrese el tiempo N°1</label>
+                <input type="number" id="tiempo1" class="container-input" step="0.1" required placeholder="2.5 segundos">
+                <label for="tiempo1">Ingrese el tiempo N°2</label>
+                <input type="number" id="tiempo2" class="container-input" step="0.1" required placeholder="2.5 segundos">
+                <label for="tiempo1">Ingrese el tiempo N°3</label>
+                <input type="number" id="tiempo3" class="container-input" step="0.1" required placeholder="2.5 segundos">
+                <label for="tiempo1">Ingrese el tiempo N°4</label>
+                <input type="number" id="tiempo4" class="container-input" step="0.1" required placeholder="2.5 segundos">
+                <label for="tiempo1">Ingrese el tiempo N°5</label>
+                <input type="number" id="tiempo5" class="container-input" step="0.1" required placeholder="2.5 segundos">
+                <br>
+                <button  class="button" id="btncalcular" type="submit">Calcular</button>
+                <br>
+                <button  class="button" id="btnreset" type="reset">Reset</button>
+                
+                <label for="resultado"  >Resultado</label>
+                <input type="number" id="Resultado" class="container-input" readonly>
+            </div>
+        </div>
+
+    </section>
+
+    <script src="./logica1.js"></script>
+</body>
+</html>
