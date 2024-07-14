@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+</head>
+<body>
+    <head>
+        <h1>Calculadora pared</h1>
+    </head>
+    <section class="container-datos">
+
+        <div class="container_pared">
+            <h2>Datos Pared</h2>
+            <form class="dataPared" id="data-pared">
+                <label for="anchoPared">Ancho Pared</label>
+                <input type="number" name="anchoPared" id="anchoP" required placeholder="5 m">
+                <label for="altoPared">Alto Pared</label>
+                <input type="number" name="altoPared" id="altoP" required placeholder="4 m">
+                <label for="resultArea">Area Pared</label>
+                <input type="number" name="resultArea" id="resAreaP" readonly>
+                <button id="btnCalPared">Calcular</button>
+            </form>
+        </div>
+        <div class="container_ladrillo">
+            <h2>Datos Ladrillos</h2>
+            <form class="dataLadrillo" id="data-ladrillo">
+                <label for="anchoLadrillo">Ancho Ladrillo</label>
+                <input type="number" name="anchoLadrillo" id="anchoL" required placeholder="3 m">
+                <label for="altoLadrillo">Alto Ladrillo</label>
+                <input type="number" name="altoLadrillo" id="altoL" required placeholder="2 m">
+                <label for="resultArea">Area Ladrillo</label>
+                <input type="number" name="resultArea" id="resAreaL" readonly>
+                <button id="btnCalcladrillo">Calcular</button>
+            </form>
+        </div>
+        <div>
+            <h2>Resultado</h2>
+            <label for="LadrillosTotales">Ladrillos totales</label>
+            <input type="number" name="LadrillosTotales" id="LadrillosTotales">
+            <button class="btnCalcular" id="btnCalcular">Calcular</button>
+            <button id="reset">Reiniciar</button>
+        </div>
+    </section>
+    <script src="./logica3.js"></script>
+</body>
+</html>
