@@ -187,3 +187,54 @@ main{
     }
 }
 
+.noticias{
+    width: 60%;
+    padding: 30px;
+    margin: 20px,;
+    background-color: $oscuro;
+    display: block;
+    // text-align:left;
+}
+
+.noticias__contenedor{
+    width: 100%;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.articulo{
+    // width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid $primario;
+}
+
+.articulo__sub-titulo{
+    @extend .perfil__nombre;
+    text-align: left;
+    padding: 5px;
+}
+
+.articulo__titulo{
+    color: white;
+    font-family: $fuente1;
+    font-size: 16px;
+    padding: 6px;
+}
+
+.articulo__texto{
+    color: $gris;
+    font-family: $fuente2;
+    padding: 10px;
+}
+
+
+
+@media screen and (min-width: 430px){
+    .perfil .noticias{
+        display: flex;
+        flex-direction: column;
+    }
+}
